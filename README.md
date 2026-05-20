@@ -50,6 +50,14 @@ FPGA implementation compatible
 | other_read  | Read request from another cache  |
 | other_write | Write request from another cache |
 
+**Outputs**
+| Signal     | Description             |
+| ---------- | ----------------------- |
+| mesi_state | Current MESI state      |
+| invalidate | Invalidate signal       |
+| writeback  | Memory writeback signal |
+
+
 **RTL Architecture**
 The design is implemented as a finite state machine (FSM) with sequential state registers and combinational next-state logic.
 
